@@ -3,8 +3,23 @@
 }
 
 html, body{
-	height:  100%;
+	min-height:  100%; /*min height bedeutet das die farbe mindestens 100% ist, wenn es aber die seite in die länge geht, wird die farbe überall angezeigt*/
 	width:  100%;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
+}
+.wrapper{
+	background: yellow;
+	height: 100%; /*100% bedeutet, dass der wrapper genau so groß ist wie der body*/
+	width: 80%; /* bedeutet das der wrapper 80% vom boddy breit ist*/
+	margin: auto; /*der rand verteilt sich automatisch in der mitte vom boddy*/
+}
+.card{
+	border: 1px black dotted; /*macht einen schwarz-gepunkteten-Rand um die Karten*/
+}
+
+.card img{ /* ich spreche jetzt mit allen bildern die in einer karte sind*/
+	width: 100%; /*sei immer so breit, wie der bildschirm breit ist. bild passt sich bildschirm an und wird größer bzw. kleiner*/
+	display: block; /*block lässt überflüssige ränder verschwinden*/
+
 }
